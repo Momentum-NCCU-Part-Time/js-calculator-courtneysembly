@@ -1,0 +1,112 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 100px;
+    /* background-color: burlywood; */
+    background-image: url("chris-liverani-rD2dc_2S3i0-unsplash.jpg");
+  }
+  
+  .calculator {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 350px;
+    height: 610px;
+    background-color: blue;
+    border-radius: 5%;
+    padding: 10px;
+  }
+  
+  .keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(80px, auto) repeat(6,80px);
+    gap: 5px;
+  }
+  
+  h3 {
+    grid-column: span 3;
+    color: white;
+  }
+  
+  h2 {
+    grid-column: span 1;
+    color: white;
+    text-align: right;
+  }
+  
+  #output {
+    border: solid 1px white;
+    border-radius: 10%;
+    grid-column: span 4;
+    text-align: right;
+    font-size: 28px;
+    background-color: rgb(168, 168, 168);
+    color: black;
+  }
+  
+  .numberButton {
+    border: solid 1px gray;
+    background-color: white;
+    border-radius: 15%;
+    color: blue;
+    font-size: 20px;
+  }
+  
+  .numberButton:hover {
+    color: red;
+  }
+  
+  .operationButton {
+    border: solid 1px gray;
+    background-color: red;
+    border-radius: 15%;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .operationButton:hover {
+    color: blue;
+  }
+  
+  #allClearButton {
+    border: solid 1px gray;
+    grid-column: span 2;
+    background-color: red;
+    border-radius: 15%;
+    color: white;
+    font-size: 20px;
+  }
+  
+  #allClearButton:hover {
+    color: blue;
+  }
+  
+  #clearButton {
+    border: solid 1px gray;
+    grid-column: span 2;
+    background-color: red;
+    border-radius: 15%;
+    color: white;
+    font-size: 20px;
+  }
+  
+  #clearButton:hover {
+    color: blue;
+  }
+  
+  #equalsButton {
+    border: solid 1px gray;
+    background-color: red;
+    border-radius: 15%;
+    color: white;
+    font-size: 20px;
+  }
+  
+  #equalsButton:hover {
+    color: blue;
+  }
